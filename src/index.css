@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand: #008080; /* Deep Teal */
+  --color-brand-dark: #006666;
+  --color-near-black: #1E293B; /* Slate 800 for warmer feel */
+  --color-gray-secondary: #64748B; /* Slate 500 */
+  --color-surface-light: #F8FAFC; /* Slate White */
+  
+  --shadow-airbnb: rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px;
+  --shadow-airbnb-hover: rgba(0,0,0,0.08) 0px 4px 12px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-light text-near-black font-sans font-normal antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-[-0.02em];
+  }
+}
+
+@layer components {
+  .airbnb-card {
+    @apply bg-white rounded-[20px] transition-shadow duration-200;
+    box-shadow: var(--shadow-airbnb);
+  }
+  
+  .airbnb-card:hover {
+    box-shadow: var(--shadow-airbnb-hover);
+  }
+  
+  .airbnb-button-primary {
+    @apply bg-brand text-white px-6 py-3 rounded-lg font-medium transition-all active:scale-95 hover:bg-brand-dark;
+  }
+  
+  .airbnb-button-circle {
+    @apply w-10 h-10 rounded-full bg-white flex items-center justify-center text-near-black transition-all hover:shadow-airbnb-hover active:scale-90 border border-gray-200;
+  }
+
+  .glass-card {
+    @apply bg-black/40 backdrop-blur-md border border-white/20 rounded-3xl p-8 text-white;
+  }
+}
