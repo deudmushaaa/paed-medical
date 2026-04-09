@@ -113,13 +113,13 @@ export default function Home() {
               className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl"
             >
               <img 
-                src="https://picsum.photos/seed/doctor-consultant/800/1000" 
-                alt="Senior Consultant" 
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800&h=1000" 
+                alt="Dr. Mugalu Jamil" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-8 left-8 right-8 glass-card py-6">
-                <p className="font-bold text-xl mb-1">Dr. Sarah Namukasa</p>
+                <p className="font-bold text-xl mb-1">Dr. Mugalu Jamil</p>
                 <p className="text-sm text-gray-300">Senior Consultant Pediatrician & Founder</p>
               </div>
             </motion.div>
@@ -149,40 +149,81 @@ export default function Home() {
       <section className="py-24 bg-surface-light">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Visit our Kampala Branch</h2>
-            <p className="text-gray-secondary">Centrally located for your convenience.</p>
+            <h2 className="text-3xl font-bold mb-4">Visit Our Branches</h2>
+            <p className="text-gray-secondary">Conveniently located to serve you better.</p>
           </div>
           
-          <div className="airbnb-card overflow-hidden h-[450px] relative">
-            {/* Placeholder for Google Map */}
-            <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-              <div className="text-center p-8">
-                <MapPin size={48} className="text-brand mx-auto mb-4" />
-                <p className="text-near-black font-bold text-xl mb-2">Interactive Map Placeholder</p>
-                <p className="text-gray-secondary">Plot 45, Kampala Road, Kampala, Uganda</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Kyebando Branch */}
+            <div className="airbnb-card overflow-hidden h-[450px] relative">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.0663810175242!2d32.58220101008547!3d0.3595152639579414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dba5f87f75835%3A0xfccefba6a41211d2!2sPaed%20Medical%20Center!5e1!3m2!1sen!2sug!4v1775723793931!5m2!1sen!2sug" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Paed Medical Center Kyebando Branch"
+              ></iframe>
+              
+              <div className="absolute bottom-6 left-6 right-6 glass-card !bg-near-black/80 text-white p-5 shadow-2xl">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h4 className="font-bold text-lg">Kyebando Branch</h4>
+                    <p className="text-xs text-gray-400">Kampala, Uganda</p>
+                  </div>
+                  <a href="tel:+256703919679" className="w-10 h-10 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors">
+                    <Phone size={18} />
+                  </a>
+                </div>
+                <div className="space-y-2 text-xs">
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Mon - Fri</span>
+                    <span>8:00 AM - 8:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Sat - Sun</span>
+                    <span>9:00 AM - 5:00 PM</span>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            {/* Floating Info Card */}
-            <div className="absolute bottom-8 left-8 max-w-xs glass-card !bg-near-black/80 text-white p-6 shadow-2xl hidden md:block">
-              <h4 className="font-bold mb-4">Opening Hours</h4>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Mon - Fri</span>
-                  <span>8:00 AM - 8:00 PM</span>
+
+            {/* Wakiso Branch */}
+            <div className="airbnb-card overflow-hidden h-[450px] relative">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.045917594615!2d32.47363957453354!3d0.4074794638809245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177daf7432c5b0f5%3A0x94b190293fa80062!2sPAED%20MEDICAL%20CENTRE%2C%20WAKISO%20BRANCH!5e1!3m2!1sen!2sug!4v1775726153791!5m2!1sen!2sug" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Paed Medical Center Wakiso Branch"
+              ></iframe>
+              
+              <div className="absolute bottom-6 left-6 right-6 glass-card !bg-near-black/80 text-white p-5 shadow-2xl">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h4 className="font-bold text-lg">Wakiso Branch</h4>
+                    <p className="text-xs text-gray-400">Wakiso, Uganda</p>
+                  </div>
+                  <a href="tel:+256707061441" className="w-10 h-10 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors">
+                    <Phone size={18} />
+                  </a>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Saturday</span>
-                  <span>9:00 AM - 5:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-400">Sunday</span>
-                  <span className="text-brand">Emergency Only</span>
+                <div className="space-y-2 text-xs">
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Mon - Fri</span>
+                    <span>8:00 AM - 7:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Sat - Sun</span>
+                    <span>9:00 AM - 4:00 PM</span>
+                  </div>
                 </div>
               </div>
-              <a href="tel:+256700000001" className="mt-6 flex items-center justify-center gap-2 bg-brand text-white py-3 rounded-xl font-bold hover:bg-brand-dark transition-colors">
-                <Phone size={16} /> Call Branch A
-              </a>
             </div>
           </div>
         </div>

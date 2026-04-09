@@ -31,7 +31,7 @@ export default function About() {
   ];
 
   const timeline = [
-    { year: '2010', event: 'Paed Medical Center founded by Dr. Sarah Namukasa in central Kampala.' },
+    { year: '2010', event: 'Paed Medical Center founded by Dr. Mugalu Jamil in central Kampala.' },
     { year: '2014', event: 'Expanded services to include Dental and General Medicine.' },
     { year: '2018', event: 'Opened our second branch in Kawempe to serve Northern Kampala.' },
     { year: '2022', event: 'Introduced specialized Neurology and Cardiology departments.' },
@@ -74,15 +74,15 @@ export default function About() {
                 </p>
               </div>
               <div className="mt-10">
-                <p className="font-bold text-xl text-near-black">Dr. Sarah Namukasa</p>
+                <p className="font-bold text-xl text-near-black">Dr. Mugalu Jamil</p>
                 <p className="text-brand font-medium">Senior Consultant Pediatrician & CEO</p>
               </div>
             </div>
             <div className="order-1 lg:order-2">
               <div className="airbnb-card p-4 rotate-2 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src="https://picsum.photos/seed/founder/800/800" 
-                  alt="Founder" 
+                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800&h=800" 
+                  alt="Dr. Mugalu Jamil" 
                   className="rounded-2xl w-full aspect-square object-cover"
                   referrerPolicy="no-referrer"
                 />

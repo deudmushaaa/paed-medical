@@ -10,21 +10,21 @@ export default function Contact() {
   const branches = [
     {
       id: 'branch-a',
-      name: 'Branch A - Central Kampala',
-      address: 'Plot 45, Kampala Road, Central Division, Kampala, Uganda',
-      phone: '+256 700 000 001',
-      email: 'central@paedmedical.com',
+      name: 'Branch A - Kyebando, Kampala',
+      address: 'Kyebando, Kampala, Uganda',
+      phone: '+256 703 919 679',
+      email: 'kyebando@paedmedical.com',
       hours: 'Mon-Fri: 8am-8pm, Sat: 9am-5pm',
-      mapUrl: 'https://picsum.photos/seed/map-central/800/400'
+      embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.0663810175242!2d32.58220101008547!3d0.3595152639579414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dba5f87f75835%3A0xfccefba6a41211d2!2sPaed%20Medical%20Center!5e1!3m2!1sen!2sug!4v1775723793931!5m2!1sen!2sug'
     },
     {
       id: 'branch-b',
-      name: 'Branch B - North Kampala',
-      address: 'Plot 12, Gulu Highway, Kawempe, Kampala, Uganda',
-      phone: '+256 700 000 002',
-      email: 'north@paedmedical.com',
+      name: 'Branch B - Wakiso Branch',
+      address: 'Wakiso, Uganda',
+      phone: '+256 707 061 441',
+      email: 'wakiso@paedmedical.com',
       hours: 'Mon-Fri: 8am-7pm, Sat: 9am-4pm',
-      mapUrl: 'https://picsum.photos/seed/map-north/800/400'
+      embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.045917594615!2d32.47363957453354!3d0.4074794638809245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177daf7432c5b0f5%3A0x94b190293fa80062!2sPAED%20MEDICAL%20CENTRE%2C%20WAKISO%20BRANCH!5e1!3m2!1sen!2sug!4v1775726153791!5m2!1sen!2sug'
     }
   ];
 
@@ -48,15 +48,24 @@ export default function Contact() {
               className="airbnb-card overflow-hidden flex flex-col"
             >
               <div className="h-64 relative bg-gray-200">
-                <img 
-                  src={branch.mapUrl} 
-                  alt={`Map for ${branch.name}`} 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-black/10" />
+                {branch.embedUrl ? (
+                  <iframe 
+                    src={branch.embedUrl} 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={true} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title={branch.name}
+                  ></iframe>
+                ) : (
+                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                    <MapPin size={48} className="text-brand/20" />
+                  </div>
+                )}
                 <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-xs font-bold text-brand shadow-sm">
-                  {branch.name.split(' - ')[1]}
+                  {branch.name.includes(' - ') ? branch.name.split(' - ')[1] : branch.name.split(' - ')[0]}
                 </div>
               </div>
               

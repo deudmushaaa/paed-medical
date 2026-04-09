@@ -141,15 +141,15 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Branch A */}
             <div>
-              <h4 className="font-bold text-brand mb-6 uppercase tracking-wider text-xs">Branch A - Central</h4>
+              <h4 className="font-bold text-brand mb-6 uppercase tracking-wider text-xs">Branch A - Kyebando</h4>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <MapPin className="text-brand shrink-0" size={18} />
-                  <p className="text-sm text-gray-400">Plot 45, Kampala Road, Central Division, Kampala</p>
+                  <p className="text-sm text-gray-400">Kyebando, Kampala, Uganda</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="text-brand shrink-0" size={18} />
-                  <a href="tel:+256700000001" className="text-sm font-bold hover:text-brand transition-colors">+256 700 000 001</a>
+                  <a href="tel:+256703919679" className="text-sm font-bold hover:text-brand transition-colors">+256 703 919 679</a>
                 </div>
                 <button className="text-xs font-semibold underline hover:text-brand transition-colors">Get Directions</button>
               </div>
@@ -157,15 +157,15 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Branch B */}
             <div>
-              <h4 className="font-bold text-brand mb-6 uppercase tracking-wider text-xs">Branch B - North</h4>
+              <h4 className="font-bold text-brand mb-6 uppercase tracking-wider text-xs">Branch B - Wakiso</h4>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <MapPin className="text-brand shrink-0" size={18} />
-                  <p className="text-sm text-gray-400">Plot 12, Gulu Highway, Kawempe, Kampala</p>
+                  <p className="text-sm text-gray-400">Wakiso, Uganda</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="text-brand shrink-0" size={18} />
-                  <a href="tel:+256700000002" className="text-sm font-bold hover:text-brand transition-colors">+256 700 000 002</a>
+                  <a href="tel:+256707061441" className="text-sm font-bold hover:text-brand transition-colors">+256 707 061 441</a>
                 </div>
                 <button className="text-xs font-semibold underline hover:text-brand transition-colors">Get Directions</button>
               </div>
