@@ -12,9 +12,9 @@ export default function Contact() {
       id: 'branch-a',
       name: 'Branch A - Kyebando, Kampala',
       address: 'Kyebando, Kampala, Uganda',
-      phone: '+256 703 919 679',
+      phone: '+256 703 919 679 / 039 4896096',
       email: 'kyebando@paedmedical.com',
-      hours: 'Mon-Fri: 8am-8pm, Sat: 9am-5pm',
+      hours: 'Daily: 8am - 10pm (24/7 for Emergencies)',
       embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.0663810175242!2d32.58220101008547!3d0.3595152639579414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dba5f87f75835%3A0xfccefba6a41211d2!2sPaed%20Medical%20Center!5e1!3m2!1sen!2sug!4v1775723793931!5m2!1sen!2sug'
     },
     {
@@ -23,7 +23,7 @@ export default function Contact() {
       address: 'Wakiso, Uganda',
       phone: '+256 707 061 441',
       email: 'wakiso@paedmedical.com',
-      hours: 'Mon-Fri: 8am-7pm, Sat: 9am-4pm',
+      hours: 'Daily: 8am - 10pm (24/7 for Emergencies)',
       embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.045917594615!2d32.47363957453354!3d0.4074794638809245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177daf7432c5b0f5%3A0x94b190293fa80062!2sPAED%20MEDICAL%20CENTRE%2C%20WAKISO%20BRANCH!5e1!3m2!1sen!2sug!4v1775726153791!5m2!1sen!2sug'
     }
   ];

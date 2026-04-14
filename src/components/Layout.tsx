@@ -147,9 +147,20 @@ export default function Layout({ children }: LayoutProps) {
                   <MapPin className="text-brand shrink-0" size={18} />
                   <p className="text-sm text-gray-400">Kyebando, Kampala, Uganda</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="text-brand shrink-0" size={18} />
-                  <a href="tel:+256703919679" className="text-sm font-bold hover:text-brand transition-colors">+256 703 919 679</a>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-3">
+                    <Phone className="text-brand shrink-0" size={18} />
+                    <a href="tel:+256703919679" className="text-sm font-bold hover:text-brand transition-colors">+256 703 919 679</a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="text-brand shrink-0" size={18} />
+                    <a href="tel:0394896096" className="text-sm font-bold hover:text-brand transition-colors">039 4896096</a>
+                  </div>
+                </div>
+                <div className="pt-2 border-t border-white/5">
+                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-wider mb-1">Operating Hours</p>
+                  <p className="text-xs text-gray-400">Daily: 8am - 10pm</p>
+                  <p className="text-xs text-brand-light font-medium">24/7 Emergency Care</p>
                 </div>
                 <button className="text-xs font-semibold underline hover:text-brand transition-colors">Get Directions</button>
               </div>
@@ -166,6 +177,11 @@ export default function Layout({ children }: LayoutProps) {
                 <div className="flex items-center gap-3">
                   <Phone className="text-brand shrink-0" size={18} />
                   <a href="tel:+256707061441" className="text-sm font-bold hover:text-brand transition-colors">+256 707 061 441</a>
+                </div>
+                <div className="pt-2 border-t border-white/5">
+                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-wider mb-1">Operating Hours</p>
+                  <p className="text-xs text-gray-400">Daily: 8am - 10pm</p>
+                  <p className="text-xs text-brand-light font-medium">24/7 Emergency Care</p>
                 </div>
                 <button className="text-xs font-semibold underline hover:text-brand transition-colors">Get Directions</button>
               </div>

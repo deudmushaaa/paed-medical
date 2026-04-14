@@ -173,18 +173,23 @@ export default function Home() {
                     <h4 className="font-bold text-lg">Kyebando Branch</h4>
                     <p className="text-xs text-gray-400">Kampala, Uganda</p>
                   </div>
-                  <a href="tel:+256703919679" className="w-10 h-10 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors">
-                    <Phone size={18} />
-                  </a>
+                  <div className="flex gap-2">
+                    <a href="tel:+256703919679" className="w-10 h-10 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors" title="Call +256 703 919 679">
+                      <Phone size={18} />
+                    </a>
+                    <a href="tel:0394896096" className="w-10 h-10 bg-brand rounded-full flex items-center justify-center hover:bg-brand-dark transition-colors" title="Call 039 4896096">
+                      <Phone size={18} />
+                    </a>
+                  </div>
                 </div>
                 <div className="space-y-2 text-xs">
                   <div className="flex justify-between">
-                    <span className="text-gray-400">Mon - Fri</span>
-                    <span>8:00 AM - 8:00 PM</span>
+                    <span className="text-gray-400">Daily Hours</span>
+                    <span>8:00 AM - 10:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">Sat - Sun</span>
-                    <span>9:00 AM - 5:00 PM</span>
+                  <div className="flex justify-between text-brand-light font-bold">
+                    <span>Emergencies</span>
+                    <span>Available 24/7</span>
                   </div>
                 </div>
               </div>
@@ -215,12 +220,12 @@ export default function Home() {
                 </div>
                 <div className="space-y-2 text-xs">
                   <div className="flex justify-between">
-                    <span className="text-gray-400">Mon - Fri</span>
-                    <span>8:00 AM - 7:00 PM</span>
+                    <span className="text-gray-400">Daily Hours</span>
+                    <span>8:00 AM - 10:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">Sat - Sun</span>
-                    <span>9:00 AM - 4:00 PM</span>
+                  <div className="flex justify-between text-brand-light font-bold">
+                    <span>Emergencies</span>
+                    <span>Available 24/7</span>
                   </div>
                 </div>
               </div>
